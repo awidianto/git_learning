@@ -1,0 +1,41 @@
+# to config basic setup
+git config --global user.name <your_name>                   # --> setup your name
+git config --global user.email <your_email>                 # --> setup your email
+git config --global core.editor <your_editor>               # --> setup editor of your choice
+
+# to check git status in a certain directory. NOTE: ALWAYS CHECK STATUS BEFORE CREATE A REPOSITORY
+git status
+
+# to create a repository in a desired directory
+git init
+
+# to add files we want to commit
+git add file<1> file<2> ... file<n>
+
+# to commit files we added
+git commit -m "commit message here..."
+git commit                                                  # this will open an editor, i.e. vim, and input your commit message there
+
+# to review what has been commited
+git log
+git log --pretty --format=<available_format>                # --> simplicity output by using a defined format
+git log --abbrev-commit                                     # --> only show a uniq, prefix commit object name
+git log --oneline                                           # --> combine --pretty and --abbrev-commit together
+
+# to undo/restore action taken
+git restore file<1> ... file<n>                             # --> discard changes in working directory
+git restore --staged file<1> ... file<n>                    # --> unstage files stagged simultaneously
+git commit --amend                                          # --> redo the most recent commit when you make some mistake
+
+# to list existing branches
+git branch
+
+# to create a new branch
+git branch <branch_name>
+
+# to move to another existing branch
+git switch <branch_name>
+
+# to make git ignores unwanted-to-track files
+mkdir <root_working_dir>/.gitignore                         # --> root is where .git is found
+vim ./.gitignore                                            # --> add files you don't want to be tracked
