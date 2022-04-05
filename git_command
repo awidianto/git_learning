@@ -33,6 +33,10 @@ git restore file<1> ... file<n>                             # --> discard change
 git restore --staged file<1> ... file<n>                    # --> unstage files stagged simultaneously
 git commit --amend                                          # --> redo the most recent commit when you make some mistake
 
+# to make git ignores unwanted-to-track files
+mkdir <root_working_dir>/.gitignore                         # --> root is where .git is found
+vim ./.gitignore                                            # --> add files you don't want to be tracked
+
 # to list existing branches
 git branch
 
@@ -57,7 +61,3 @@ git branch -D <branch_name>                                 # do this if git giv
 
 # to rename an existing branch                              # NOTE: must do this on the target branch, can't do this on another branch
 git branch -m <new_branch_name>
-
-# to make git ignores unwanted-to-track files
-mkdir <root_working_dir>/.gitignore                         # --> root is where .git is found
-vim ./.gitignore                                            # --> add files you don't want to be tracked
