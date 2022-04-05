@@ -51,6 +51,10 @@ git checkout -B <branch_name>
 1. git will not let you to move to another branch if there is a modified existing file in the working tree
 2. git will let you to mvoe to another branch even if the working tree is not clean, but it only contains of untracked files
 
+# to delete an existing branch                              # NOTE: must do this on another branch, can't do this on the target branch
+git branch -d <branch_name>                                 # if the branch is fully merged, this command will be executed succesfully
+git branch -D <branch_name>                                 # do this if git gives you message that the branch is not fully merged
+
 # to make git ignores unwanted-to-track files
 mkdir <root_working_dir>/.gitignore                         # --> root is where .git is found
 vim ./.gitignore                                            # --> add files you don't want to be tracked
