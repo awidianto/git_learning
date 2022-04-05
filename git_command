@@ -43,6 +43,10 @@ git branch <branch_name>
 git switch <branch_name>
 git checkout <branch_name>
 
+# to create a new branch and then switching/checking out to it
+git switch -c <branch_name>
+git checkout -B <branch_name>
+
 # to make git ignores unwanted-to-track files
 mkdir <root_working_dir>/.gitignore                         # --> root is where .git is found
 vim ./.gitignore                                            # --> add files you don't want to be tracked
