@@ -53,7 +53,7 @@ git checkout -B <branch_name>
 
 # possible issues that may come when you switch to another branch while the WORKING TREE IS NOT CLEAN
 1. git will not let you to move to another branch if there is a modified existing file in the working tree
-2. git will let you to mvoe to another branch even if the working tree is not clean, but it only contains of untracked files
+2. git will let you to move to another branch even if the working tree is not clean, but it only contains of untracked files
 
 # to delete an existing branch                              # NOTE: must do this on another branch, can't do this on the target branch
 git branch -d <branch_name>                                 # if the branch is fully merged, this command will be executed succesfully
