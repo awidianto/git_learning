@@ -3,6 +3,11 @@ git config --global user.name <your_name>                   # --> setup your nam
 git config --global user.email <your_email>                 # --> setup your email
 git config --global core.editor <your_editor>               # --> setup editor of your choice
 
+# to see current basic config
+git config user.name                                        # --> see current user's name who makes the commits
+git config user.email                                       # --> see current user's email
+git config core.editor                                      # --> see current editor of your choice
+
 # to check git status in a certain directory. NOTE: ALWAYS CHECK STATUS BEFORE CREATE A REPOSITORY
 git status
 
