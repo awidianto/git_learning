@@ -18,8 +18,8 @@ git init
 git add file<1> file<2> ... file<n>                         # --> stage one or more newly created/modified files separately by mentioned them one-by-one
 git add .                                                   # --> stage all newly created/modified files simultaneously
 
-# to commit files we added
-git commit -m "commit message here..."
+# to commit files we've added
+git commit -m "commit message here..."                      # this will commit staged files and input your commit message in terminal
 git commit                                                  # this will open an editor, i.e. vim, and input your commit message there
 
 # to review what has been commited
