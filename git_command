@@ -36,7 +36,7 @@ git commit --amend                                          # --> redo the most 
 # to list existing branches
 git branch
 
-# to create a new branch
+# to create a new branch, without switching/checking out to it
 git branch <branch_name>
 
 # to move to another existing branch
