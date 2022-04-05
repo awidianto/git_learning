@@ -15,7 +15,8 @@ git status
 git init
 
 # to add files we want to commit
-git add file<1> file<2> ... file<n>
+git add file<1> file<2> ... file<n>                         # --> stage one or more newly created/modified files separately by mentioned them one-by-one
+git add .                                                   # --> stage all newly created/modified files simultaneously
 
 # to commit files we added
 git commit -m "commit message here..."
